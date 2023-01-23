@@ -1,10 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     margin-left: .5rem;
+    margin-right: .5rem;
     width: 23,5rem;
+    font-size: 1,2rem;
+    background-color: var(--backgroundgrey);
+}
+
+:root {
+    --accentred: #FF6B6B;
+    --darkgrey: #3C3B34;
+    --backgroundgrey: #EAEAE6;
+    --lightgrey: #C6C5BD;
+}
+
+.lifely-logo {
+    width: 6rem;
+    padding-top: 1rem;
 }
 
 .headerpicture {
     width: 20rem;
-    margin-left: .5rem;
 }
+
+.moto {
+    font-size: 1.5rem;
+    text-decoration: .25rem underline var(--accentred);
+}
+
+.AI-introduction {
+    background-color: var(--lightgrey);
+    padding-bottom: 1rem;
+}
+
+.AI-intro-text {
+    padding-top: 1rem;
+}
+
+.AI-introduction-picture {
+    width: 20rem;
+    height: auto;
+}
+
+.design-sprint {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.text-design-sprint {
+    padding-left: .5rem;
+}
+
+.AI-team {
+    width: 20rem;
+}
+
+.steps-section {
+    border: .25rem var(--accentred);
+    background-color: var(--lightgrey);
+}
+
+.text-steps {
+    padding-left: .5rem;
+    padding-top: .5rem;
+}
+
+.the-steps {
+    padding-bottom: .5rem;
+}
+
+.previouswork {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-appointment {
+    background-color: var(--lightgrey);
+    padding-top: .5rem;
+    padding-left: .5rem;
+}
+
+.contact {
+    text-decoration: .25rem underline var(--accentred);
+}
+
+.appointment-planner {
+    padding-bottom: 2rem;
+}
+
+.send-button {
+    background-color: white;
+    border-color: var(--accentred);
+    border-radius: 1.875rem;
+    height: 2rem;
+    width: 4rem;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    background-color: var(--accentred);
+    cursor: pointer;
+}
+
+.related-articles {
+    padding-top: 2rem;
+}
+
+
+.footer-information {
+    background-color: var(--darkgrey);
+    color: white;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
