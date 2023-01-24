@@ -4,8 +4,8 @@
 
 body {
     margin: 0;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     width: 23,5rem;
     font-size: 1,2rem;
     background-color: var(--backgroundgrey);
@@ -39,6 +39,12 @@ body {
 
 .AI-intro-text {
     padding-top: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.AI-intro-info {
+    padding-left: .5rem;
 }
 
 .AI-introduction-picture {
@@ -47,8 +53,8 @@ body {
 }
 
 .design-sprint {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .text-design-sprint {
@@ -64,7 +70,7 @@ body {
 } */
 
 .text-steps {
-    padding-left: .5rem;
+    padding-left: .2rem;
     padding-top: .5rem;
     font-size: 1.5rem;
 }
@@ -75,22 +81,31 @@ body {
 
 .step-1-div, .step-2-div, .step-3-div, .step-4-div, .step-5-div {
     background-color: white;
+    box-shadow: 0px 0px 10px 1px black;
+    /* border-radius: 5%; */
 }
 
 .step-1, .step-2, .step-3, .step-4, .step-5 {
     color: var(--accentred);
-    padding-top: .2rem;
-    padding-left: .2rem;
-    text-decoration: underline .5rem var(--darkgrey);
+    padding-top: 1rem;
+    padding-left: .7rem;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .step-information {
-    padding-left: .2rem;
+    padding-left: .5rem;
+}
+
+.subtitle-steps {
+    padding-left: .5rem;
+    font-weight: bold;
 }
 
 .step-pictures {
-    padding-left: .2rem;
+    padding-left: .5rem;
     width: 20rem;
+    padding-bottom: 2rem;
 }
 
 .previouswork {
@@ -123,14 +138,14 @@ body {
 .input-appointment {
     width: 15rem;
     height: 2rem;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     background: transparent;
 }
 
 .send-button {
     background-color: white;
     border-color: var(--accentred);
-    border-radius: 1.875rem;
+    /* border-radius: 1.875rem; */
     height: 2rem;
     width: 4rem;
     transition: .2s ease-in-out;
@@ -154,11 +169,30 @@ body {
 
 .footer-information {
     background-color: var(--darkgrey);
-    color: white;
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
+.footer-header {
+    color: white;
+    font-weight: bold;
+}
+
 .footerlist {
     list-style: none;
+    padding-left: 1.5rem;
+    color: white;
+    font-weight: lighter;
 }
+
+.footerlist:hover {
+    color: var(--accentred);
+    cursor: pointer;
+}
+
+
+/* @media screen and (min-width: 600px) {
+    body {
+      background-color: blue;
+    }
+  } */
