@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Favicon_homerun.png">
     <title>Lifely</title>
 </head>
 
@@ -12,8 +13,9 @@
 
 <body>
 
-<header>    
-    <img src="lifely-logo.png" href="#" class="lifely-logo" alt="#"></img>
+<header class="navbar-header">    
+      <img src="lifely-logo.png" href="#" class="lifely-logo" alt="#"></img>  
+      <a class="contact-button" href="#contact-lifely">Contact</a>
 </header>
 
     <div class="#">
@@ -21,7 +23,7 @@
             <p>Getting started with AI</p> 
         </h2>
             <p class="moto"> Solve for good</p>
-        <img src="images/headerpicture.jpg" href="#" class="headerpicture" alt="workspacepicture"></img>
+        <!-- <img src="images/headerpicture.jpg" href="#" class="headerpicture" alt="workspacepicture"></img> -->
     </div>
 
 
@@ -41,11 +43,6 @@
     </section>
 
 </section>
-
-
-<!-- AI Design sprint -->
-
-
 
 <!-- the 5 steps -->
 
@@ -95,21 +92,21 @@
 
 <!-- Previous work -->
 
-    <div class="previouswork">
-        <h4>We've done this before</h4>
+    <section class="previouswork">
+        <h4 class="previous-text">We've done this before</h4>
         <ul>
             <li class="case1"> Ruler AI case study</li>
                 <a>Allowing law experts to focus on their expertise</a>
             <li class="case2"> TopTaal case study</li>
                 <a>Predecting chances of succes</a>
         </ul>
-    </div>
+    </section>
 
     <!-- appointment planner & contact -->
 
 <section class="contact-appointment">  
     <div>
-        <h4 class="contact">Contact</h4>
+        <h4 class="contact" id="contact-lifely" >Contact</h4>
         <a>Not sure yet? Let's discuss!</a>
         <br>Call us: 020 846 19 05
         <br>Mail our expert: martijn@lifely.nl
@@ -119,13 +116,15 @@
         <h4>We're ready for you!</h4>
         <form action="#" class="meeting-planner">
             <!-- <label>Firstname -->
-            <input type="text" class="input-appointment" name="name" placeholder="Firstname">
+            <div class="flex-form">
+                <input type="text" class="input-appointment" name="name" placeholder="Firstname">
             <!-- </label> -->
             <!-- <label>Your e-mail -->
                 <input type="email" class="input-appointment name="email" placeholder="Your e-mail">
+            </div>
             <!-- </label> -->
             <!-- <label>Your question -->
-                <input type="text" class="input-appointment name="question" placeholder="Your question">
+                <textarea name="text1" class="input-appointment2" placeholder="Your question" cols="40" rows="5"></textarea>
             <!-- </label> -->
             <button type="submit" class="send-button">Send</button>
         </form>
@@ -134,7 +133,8 @@
 
 <!-- Related articles -->
 
-    <div class="related-articles">
+    <section class="related-articles">
+      <div class="related-text">
         <h4>Related Articles</h4>
         <a>Robotic Process Automation</a>
         <br>
@@ -144,7 +144,8 @@
         <a>AI-driven Digital Transformation</a>
         <br>
         <a href="#">Read more!</a>
-    </div>
+      </div>
+    </section>
 
 <!-- Footer -->
 

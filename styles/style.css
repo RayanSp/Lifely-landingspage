@@ -16,6 +16,59 @@ body {
     --darkgrey: #3C3B34;
     --backgroundgrey: #EAEAE6;
     --lightgrey: #C6C5BD;
+
+    --font-bold: 1.2rem AktivBd, sans-serif; 
+    --font-light: .9rem AktivLt, sans-serif;
+    --font-medium: 1.1rem AktivMd, sans-serif;
+    --font-regular: 1rem AktivRg, sans-serif;
+}
+
+@font-face {
+    font-family: Aktiv Grotesk;
+    src: url(AktivGrotesk_Rg.ttf);
+}
+
+@font-face {
+    font-family: Aktiv Grotesk;
+    src: url(AktivGrotesk_Md.ttf);
+}
+
+@font-face {
+    font-family: Aktiv Grotesk;
+    src: url(AktivGrotesk_Lt.ttf);
+}
+
+@font-face {
+    font-family: Aktiv Grotesk;
+    src: url(AktivGrotesk_Bd.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-button {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: .3rem;
+    border: 1px solid var(--accentred);
+    background-color: var(--accentred);
+    color: white;
+    text-decoration: none;
+    font: var(--font-bold);
+    transition: .3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: var(--accentred);
 }
 
 .lifely-logo {
@@ -25,6 +78,7 @@ body {
 
 .headerpicture {
     width: 20rem;
+    box-shadow: 0px 0px 10px 1px black;
 }
 
 .moto {
@@ -35,6 +89,8 @@ body {
 .AI-introduction {
     background-color: var(--lightgrey);
     padding-bottom: 1rem;
+    box-shadow: 0px 0px 10px 1px black;
+    font: var(--font-regular);
 }
 
 .AI-intro-text {
@@ -63,11 +119,13 @@ body {
 
 .AI-team {
     width: 20rem;
+    box-shadow: 0px 0px 10px 1px black;
 }
 
 /* .steps-section {
     background-color: var(--lightgrey);
 } */
+
 
 .text-steps {
     padding-left: .2rem;
@@ -95,6 +153,7 @@ body {
 
 .step-information {
     padding-left: .5rem;
+    font: var(--font-regular);
 }
 
 .subtitle-steps {
@@ -109,18 +168,29 @@ body {
 }
 
 .previouswork {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    background-color: var(--lightgrey);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.previous-text {
+    padding-left: .7rem;
 }
 
 .contact-appointment {
     background-color: var(--lightgrey);
     padding-top: .5rem;
     padding-left: .5rem;
+    box-shadow: 0px 0px 10px 1px black;
+    font: var(--font-light);
 }
 
 .contact {
     text-decoration: .25rem underline var(--accentred);
+    font-size: 1.5rem;
 }
 
 .appointment-planner {
@@ -140,30 +210,54 @@ body {
     height: 2rem;
     /* border-radius: 5%; */
     background: transparent;
+    border: .15rem solid black;
+    margin-top: .5rem;
 }
 
+.input-appointment2 {
+    width: 15rem;
+    height: 4rem;
+    /* border-radius: 5%; */
+    background: transparent;
+    border: .15rem solid black;
+    margin-top: .5rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+
 .send-button {
-    background-color: white;
-    border-color: var(--accentred);
+    background-color: var(--accentred);
+    border: .1rem solid var(--accentred);
     /* border-radius: 1.875rem; */
     height: 2rem;
     width: 4rem;
     transition: .2s ease-in-out;
     font-weight: bold;
-    color: var(--accentred);
+    color: white;
     margin-top: 1rem;
 }
 
 .send-button:hover {
-    background-color: var(--accentred);
+    background-color: white;
     cursor: pointer;
-    color: white;
+    color: var(--accentred);
 }
 
 .related-articles {
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    padding-left: .5rem;
+    background-color: var(--lightgrey);
+    padding-top: 0.4rem;
+    padding-bottom: 1.75rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 1px black;
+    font: var(--font-regular);
+}
+
+.related-text {
+    padding-left: .7rem;
 }
 
 
@@ -171,18 +265,24 @@ body {
     background-color: var(--darkgrey);
     padding-top: .5rem;
     padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-header {
     color: white;
+    padding-left: .7rem;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .footerlist {
     list-style: none;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     color: white;
     font-weight: lighter;
+    font-size: .9rem;
+    font: var(--font-light);
 }
 
 .footerlist:hover {
@@ -196,3 +296,22 @@ body {
       background-color: blue;
     }
   } */
+
+@media screen and (min-width: 750px) {
+    .footer-information {
+        flex-direction: row;
+        justify-content: center;
+    }    
+    .footer-header {
+        margin-right: 5rem;
+    }
+    .input-appointment2 {
+        width: 30.25rem;
+    }
+}
+
+/* @media screen and (min-width: 750px) {
+    .footer-header {
+        margin-right: 5rem;
+    }
+} */
