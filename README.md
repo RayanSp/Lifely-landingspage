@@ -1,18 +1,35 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Lifely
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Inhoudsopgaven
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+ * [Opdracht](#opdracht)
+ * [Kenmerken](#kenmerken)
+ * [Website](#website)
+ * [Licentsie](#licentsie)
+
+
+## Opdracht 
+Een landingspage maken voor Lifely, waarin een korte introductie staat over AI en hoe zij te werk gaan met klanten. Daarbij moet er een afspraak gemaakt kunnen worden op de website. 
+
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+HTML, CSS en JS gebruikt. Verder is de website gemaakt in de style van lifely. Hierbij is hun font, AktivGrotesk, gebruikt. En een aantal van hun kleuren. 
 
 
-## Licentie
+## Website
+
+### Mobile
+
+<img width="430" alt="Schermafbeelding 2023-01-27 om 11 59 57" src="https://user-images.githubusercontent.com/112861069/215069989-87e95a4b-ca2d-49f3-81f5-ead39f76364d.png">
+
+
+
+### Desktop
+
+<img width="1435" alt="Schermafbeelding 2023-01-27 om 12 00 38" src="https://user-images.githubusercontent.com/112861069/215070061-ccb315ea-b97c-4be5-adff-3866b469f9a4.png">
+
+
+## Licentsie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
 
