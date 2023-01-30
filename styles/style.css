@@ -140,6 +140,7 @@ html {
 .step-1-div, .step-2-div, .step-3-div, .step-4-div, .step-5-div {
     background-color: white;
     box-shadow: 0px 0px 10px 1px black;
+    margin-bottom: 1.5rem;
     /* border-radius: 5%; */
 }
 
@@ -175,10 +176,11 @@ html {
     transition: .6s ease opacity, .6s ease transform;
 }
 
-/* .step-header {
+.step-header {
     display: flex;
-    flex-direction: column;
-} */
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .expand-button {
     text-decoration: none;
@@ -186,6 +188,7 @@ html {
     background: transparent;
     font-size: 2rem;
     transition: .2s ease-in-out;  
+    padding-right: 5rem;
 }
 
 .expand-button:hover {
