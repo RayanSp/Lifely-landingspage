@@ -167,6 +167,32 @@ html {
     padding-bottom: 2rem;
 }
 
+
+.content-steps {
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+    transition: .6s ease opacity, .6s ease transform;
+}
+
+/* .step-header {
+    display: flex;
+    flex-direction: column;
+} */
+
+.expand-button {
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    transition: .2s ease-in-out;  
+}
+
+.expand-button:hover {
+    color: var(--accentred);
+    cursor: pointer;
+}
+
 .previouswork {
     background-color: var(--lightgrey);
     padding-top: 0.75rem;
